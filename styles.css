@@ -1,0 +1,1122 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  /* Ignore default margin */
+  background: #605C53 url(path/to/your-image.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.first-frame {
+  position: relative;
+  overflow: auto;
+}
+
+.second-frame {
+  position: relative;
+  overflow: auto;
+}
+
+.third-frame {
+  position: relative;
+  overflow: auto;
+}
+
+.fourth-frame {
+  position: relative;
+  overflow: auto;
+  z-index: 0;
+  margin-left: 2vh;
+}
+
+
+video {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.picture_this_line {
+  position: absolute;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 8vw;
+  line-height: 8vw;
+  color: #FFC700;
+  letter-spacing: 0.06em;
+  z-index: 2;
+  top: 12vh;
+  margin-left: 4vw;
+}
+
+
+.picture_this_line hr {
+  position: absolute;
+  border: none;
+  top: 16vh;
+  margin-left: 18vw;
+  z-index: 2;
+  animation: grow 5s ease-in-out infinite alternate-reverse;
+  max-width: 15vw;
+  /* Updated value */
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 3vw);
+  background-size: 1vw 1vw; /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  height: 0.1vw;
+}
+
+
+@keyframes grow {
+  0% {
+    width: 0vw;
+  }
+
+  50% {
+    width: 15vw;
+    /* Updated value */
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+
+
+
+.A_group_of {
+  position: absolute;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  width: 42vw;
+  margin-left: 50vw;
+  top: 55vh;
+
+}
+
+.motion_rock {
+  position: absolute;
+  width: 16.6vw;
+  margin-left: 42vw;
+  margin-top: 41vh;
+  margin-bottom: 42vh;
+  z-index: 1;
+
+}
+
+.image_frame_2 {
+  position: relative;
+  width: 17vw;
+  margin-left: 42vw;
+  margin-top: 40vh;
+  margin-bottom: 42vh;
+  z-index: 2;
+
+}
+
+.motion_rock_one_stroke {
+  margin-top: -15vh;
+  margin-left: 51.5vw;
+  position: absolute;
+  z-index: 1;
+  max-width: 15vw;
+}
+
+.motion_rock_one_image {
+  position: relative;
+  z-index: 2;
+  width: 17vw;
+  top: 2vh;
+  /* Adjust this value as needed */
+}
+
+.motion_rock_two_stroke {
+  position: absolute;
+  z-index: 1;
+  width: 12vw;
+  vertical-align: top;
+  margin-top: -14vh;
+  margin-left: 27.3vw;
+}
+
+.motion_rock_two_image {
+  position: relative;
+  z-index: 2;
+  width: 13vw;
+  vertical-align: top;
+  margin-left: -1vw;
+}
+
+.motion_rock_three_stroke {
+  position: absolute;
+  width: 9vw;
+  z-index: 1;
+  margin-top: -15.5vh;
+  margin-left: 82vw;
+}
+
+.motion_rock_three_image {
+  position: relative;
+  width: 10vw;
+  z-index: 2;
+  top: 1.5vh;
+}
+
+.SAILING-STONES {
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 42vh;
+}
+
+
+
+.image-column {
+  width: 33.2%;
+  align-items: left;
+}
+
+.three-column-layout {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 30vh;
+}
+
+.image-column {
+  width: 33vw;
+  align-items: left;
+  order: 2;
+  margin-left: 5vw;
+}
+
+.text-column {
+  order: 1;
+  max-width: 27vw;
+  margin-left: 4vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-top: -3vh;
+}
+
+
+.frame_3.1_no_stroke {
+  position: relative;
+  z-index: 1;
+}
+
+.line-column hr {
+  order: 3;
+  position: absolute;
+  border: none;
+  width: 21vw;
+  height: 0.1vw;
+  top: 0;
+  margin-left: 4vw;
+  background-image: linear-gradient(to right, #FFC700 0.5vw, transparent 0.5vw, transparent 1.5vw);
+  background-size: 1vw 1vw;
+  /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: draw 6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes draw {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 21vw;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+
+.fourth-frame .image-column img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.fifth-frame {
+  margin-top: 13vh;
+  position: relative;
+  width: 100vw;
+  height: 400vh;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(96, 92, 83, 0.56) 3.5%, rgba(96, 92, 83, 0.52) 5.1%, rgba(96, 92, 83, 0.5) 6.66%, rgba(82, 80, 75, 0.482889) 8.37%, rgba(68, 67, 66, 0.465327) 10.13%, rgba(15, 21, 34, 0.4) 16.68%, rgba(14, 19, 31, 0.538261) 20.12%, rgba(13, 18, 29, 0.625953) 22.3%, rgba(13, 17, 27, 0.7) 24.14%, rgba(12, 15, 22, 0.98) 34.5%, #0B0E14 39.39%, rgba(11, 14, 20, 0.98) 45.11%, rgba(11, 14, 20, 0.9) 57.13%, rgba(15, 21, 34, 0.58) 82.64%, rgba(39, 42, 49, 0.619929) 85.92%, rgba(49, 51, 54, 0.67) 87.21%, rgba(64, 64, 63, 0.66) 89.21%, rgba(96, 92, 83, 0.3) 92.51%);
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.stars-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: sizeChangeAnimation 3s infinite alternate;
+}
+
+/* Create animation that changes the size of the stars - note that it should move them up and down just increase the star size and then decrease it */
+@keyframes sizeChangeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.stars-background {
+  position: absolute;
+  top: 118vh;
+  left: 0vw;
+  width: 100vw;
+  height: 110vh;
+  object-fit: contain;
+}
+
+.moon {
+  position: absolute;
+  top: 140vh;
+  left: 85vw;
+  transform: translate(-50%, -50%);
+  width: 2vw;
+  height: 10vh;
+  object-fit: contain;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+
+#lettering_small.but-its-not-just {
+  /* Styles shared by both selectors */
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  width: 30vw;
+  margin-left: 24vw;
+  position: absolute;
+  top: 0vh;
+  z-index: 3;
+}
+
+
+.line-column-fifth-frame hr {
+  order: 3;
+  position: absolute;
+  border: none;
+  width: 7vw;
+  height: 0.1vw;
+  top: 65vh;
+  margin-left: 31vw;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 3vw);
+  background-size: 1vw 1vw;
+  /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow 5s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 7vw;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+
+
+.When-I-arrived {
+  font-family: 'Mokoko';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 3.5vh;
+  letter-spacing: 0.06em;
+  color: #DFAE00;
+  width: 47vw;
+  margin-left: 42vw;
+  margin-top: 65vh;
+
+}
+
+.after-camping {
+  font-family: 'Mokoko';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 3.5vh;
+  letter-spacing: 0.06em;
+  color: #DFAE00;
+  width: 47vw;
+  margin-left: 27vw;
+  margin-top: 85vh;
+}
+
+.but-in-2014 {
+  animation: typing 2s steps(28), blink .5s step-end infinite alternate;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4vh;
+  line-height: 5vh;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  width: 50vw;
+  margin-left: 8.3vw;
+  margin-top: 50vh;
+}
+
+.line-column-02 hr {
+  order: 1;
+  position: absolute;
+  border: none;
+  width: 8.3vw;
+  height: 0.1vw;
+  top: 0vh;
+  margin-left: 6vw;
+  margin-top: 278vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 3vw);
+  background-size: 1vw 1vw;
+  /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow 5s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 8.3vw;
+  }
+
+  0% {
+    width: 0vw;
+  }
+}
+
+
+.text-column-02 p {
+  width: 29vw;
+  order: 2;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-top: 36vh;
+  margin-left: 20vw;
+}
+
+.image_frame_7 {
+  margin-left: 69vw;
+  width: 24.9vw;
+  margin-top: -23vh;
+}
+
+.a-balance {
+
+  width: 100vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.4vh;
+  letter-spacing: 0.06em;
+  color: #FFC700;
+  margin-top: 22vw;
+  margin-left: 3.5vw;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+.the_big_rock_stroke {
+  position: absolute;
+  margin-left: -17vw;
+  z-index: 0;
+}
+
+.the_big_rock {
+  margin-top: -7vh;
+  width: 73vw;
+  position: absolute;
+  margin-left: -20vw;
+  z-index: 1;
+}
+
+.my-text {
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vh;
+  fill: #ffff;
+}
+
+.sixth-frame {
+  margin-left: -8vw;
+  margin-bottom: 50vh;
+}
+
+.water-frame {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50vh;
+}
+
+
+.water-frame-first-column-text h1 {
+  position: absolute;
+  order: 1;
+  width: 29vw;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: start;
+  margin-top: 1vh;
+}
+
+.water-frame-second-column-line hr {
+  position: absolute;
+  order: 2;
+  border: none;
+  width: 31vw;
+  height: 0.1vw;
+  margin-left: 29vw;
+  margin-top: 4vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 3vw);
+  background-size: 1vw 1vw;
+  /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow-water 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes grow-water {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 31vw;
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+.water-frame-third-column-text-02 p {
+  position: absolute;
+  order: 3;
+  width: 29vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 65vw;
+  margin-bottom: 10vh;
+}
+
+.temperature-frame {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50vh;
+}
+
+
+.temperature-frame-first-column-text h1 {
+  position: absolute;
+  order: 1;
+  width: 29vw;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: start;
+  margin-top: 23vh;
+}
+
+.temperature-frame-second-column-line hr {
+  position: absolute;
+  order: 2;
+  border: none;
+  width: 12vw;
+  height: 0.1vw;
+  margin-left: 48vw;
+  margin-top: 25vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 3vw);
+  background-size: 1vw 1vw;
+  background-repeat: repeat-x;
+  animation: grow-temperature 5s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes grow-temperature {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 12vw;
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+
+.temperature-frame-third-column-text-02 p {
+  position: absolute;
+  order: 3;
+  width: 29vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 65vw;
+  margin-bottom: 10vh;
+  margin-top: 24vh;
+}
+
+
+.wind-frame {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50vh;
+}
+
+
+.wind-frame-first-column-text h1 {
+  position: absolute;
+  order: 1;
+  width: 29vw;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: start;
+  margin-top: 47vh;
+}
+
+.wind-frame-second-column-line hr {
+  position: absolute;
+  order: 2;
+  border: none;
+  width: 35vw;
+  height: 0.1vw;
+  margin-left: 25vw;
+  margin-top: 49vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 3vw);
+  background-size: 1vw 1vw; /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow-wind 5s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes grow-wind {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 35vw;
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+.wind-frame-third-column-text-02 p {
+  position: absolute;
+  order: 3;
+  width: 29vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 65vw;
+  margin-bottom: 10vh;
+  margin-top: 48vh;
+}
+
+
+.sunny-days-frame {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50vh;
+}
+
+
+.sunny-days-frame-first-column-text h1 {
+  position: absolute;
+  order: 1;
+  width: 50vw;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: start;
+  margin-top: 67vh;
+}
+
+.sunny-days-frame-second-column-line hr {
+  position: absolute;
+  order: 2;
+  border: none;
+  width: 16vw;
+  height: 0.1vw;
+  margin-left: 43vw;
+  margin-top: 70vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 2.5vw);
+  background-size: 1vw 1vw; /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow-sunny 5s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes grow-sunny {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 16vw;
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+.sunny-days-frame-third-column-text-02 p {
+  position: absolute;
+  order: 3;
+  width: 28.5vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 65vw;
+  margin-bottom: 10vh;
+  margin-top: 69vh;
+}
+
+.first-column-line hr {
+  position: absolute;
+  order: 1;
+  border: none;
+  width: 10vw;
+  height: 0.1vw;
+  margin-left: 6vw;
+  margin-top: 3vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 2.5vw);
+  background-size: 1vw 1vw; /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 10vw;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.second-column-text p {
+  position: absolute;
+  order: 2;
+  width: 31vw;
+  order: 2;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 20vw;
+  margin-bottom: 10vh;
+}
+
+.third-column-text-01 p {
+  position: absolute;
+  order: 3;
+  width: 39vw;
+  order: 2;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 55vw;
+}
+
+
+.eighth-frame {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50vh;
+  margin-top: 140vh;
+}
+
+.ninth-frame p {
+  text-align: center;
+  color: #FFF;
+  font-size: 3vw;
+  font-family: 'Sofia Pro';
+  line-height: 6.5vh;
+  width: 37.5vw;
+  margin-left: 30vw;
+  letter-spacing: 0.01em;
+  margin-top: 40vh;
+  margin-bottom: 50vh;
+}
+
+.first-column-text p {
+  position: absolute;
+  order: 1;
+  width: 35vw;
+  order: 2;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+}
+
+.second-column-line hr {
+  position: absolute;
+  order: 2;
+  border: none;
+  width: 8.3vw;
+  height: 0.1vw;
+  margin-left: 55vw;
+  margin-top: 4vh;
+  background-image: linear-gradient(to right, #FFC700 0.8vw, transparent 0.8vw, transparent 2.5vw);
+  background-size: 1vw 1vw; /* Adjust the value to increase or decrease the space between dashes */
+  background-repeat: repeat-x;
+  animation: grow 5s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 8.3vw;
+  }
+
+  100% {
+    width: 0vw;
+  }
+}
+
+.tenth-frame {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 50vh;
+}
+
+.third-column-text-02 p {
+  position: absolute;
+  order: 1;
+  width: 33vw;
+  order: 3;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 65vw;
+  margin-bottom: 10vh;
+}
+
+#lettering {
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  height: 40vh;
+  width: 50vw;
+  margin-left: 25vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+
+}
+
+#lettering span {
+  position: relative;
+  transition-property: all;
+}
+
+#lettering span:nth-child(n+1) {
+  transition-duration: 0.3s;
+}
+
+#lettering span:nth-child(n+2) {
+  transition-duration: 0.35s;
+}
+
+#lettering span:nth-child(n+3) {
+  transition-duration: 0.45s;
+}
+
+#lettering span:nth-child(n+4) {
+  transition-duration: 0.5s;
+}
+
+#lettering span:nth-child(n+5) {
+  transition-duration: 1s;
+}
+
+#lettering:hover span {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+#lettering_small {
+  margin-top: 0vh;
+  height: 500vh;
+  width: 50vw;
+  margin-left: 25vw;
+  font-family: 'Sofia Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+
+}
+
+#lettering_small span {
+  position: relative;
+  transition-property: all;
+}
+
+#lettering_small span:nth-child(n+1) {
+  transition-duration: 0.3s;
+}
+
+#lettering_small span:nth-child(n+2) {
+  transition-duration: 0.35s;
+}
+
+#lettering_small span:nth-child(n+3) {
+  transition-duration: 0.45s;
+}
+
+#lettering_small span:nth-child(n+4) {
+  transition-duration: 0.5s;
+}
+
+#lettering_small span:nth-child(n+5) {
+  transition-duration: 1s;
+}
+
+#lettering_small:hover span {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+
+
+
+
+.seventh-frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.water_title,
+.temperature_title,
+.wind_title,
+.sunny-days {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.title-column,
+.line-column,
+.content-column {
+  flex-basis: 33.33%;
+}
+
+.title-column {
+  font-size: 24px;
+}
+
+.line-column {
+  position: relative;
+  height: 1px;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.content-column {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.last-frame {
+  position: relative;
+  overflow: auto;
+  margin-bottom: 0;
+  height: auto;
+  min-height: calc(100vh - 20px);
+  /* Adjust the value (20px) as needed */
+}
+
+
+.motion_rock_last {
+  position: absolute;
+  width: 16.6vw;
+  margin-left: 42vw;
+  margin-top: 41vh;
+  z-index: 1;
+  margin-bottom: 0vh;
+}
